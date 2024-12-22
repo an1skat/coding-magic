@@ -2,7 +2,7 @@
   "name": "coding-magic",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/an1skat/coding-magic",
+  "homepage": "https://an1skat.github.io/coding-magic/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /coding-magic/"
