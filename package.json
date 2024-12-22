@@ -2,6 +2,7 @@
   "name": "coding-magic",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "homepage": "https://an1skat.github.io/coding-magic/",
   "scripts": {
     "start": "parcel src/*.html",
