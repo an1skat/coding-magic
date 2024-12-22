@@ -1,0 +1,120 @@
+<header class="header">
+  <div class="container">
+    <div class="header-container">
+      <svg class="logo-svg" width="95" height="40">
+        <use href="./images/icons.svg#icon-logo"></use>
+      </svg>
+      <nav class="nav">
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a href="" class="nav-link link">
+              Інтерактив
+              <div class="arrow"></div>
+            </a>
+            <ul class="dropdown list">
+              <li class="dropdown-item">
+                <button type="button" class="dropdown-choice">Числовий</button>
+              </li>
+              <li class="dropdown-item">
+                <button type="button" class="dropdown-choice">Ігровий</button>
+              </li>
+              <li class="dropdown-item">
+                <button type="button" class="dropdown-choice">
+                  Ознайомчий
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#9" class="nav-link link">Наша команда</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="theme-container">
+      <button type="button" class="theme-btn">
+        <images
+          class="theme-images light"
+          src="./images/themeLight.png"
+          alt="theme image"
+        />
+      </button>
+      <p class="welcome-text" data-welcome-open>Вітаємо, User!</p>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="sect year">
+    <div class="container"></div>
+  </section>
+  <section class="sect guessNumber">
+    <div class="container"></div>
+  </section>
+  <section class="sect stoneSccicorsPaper">
+    <div class="container"></div>
+  </section>
+  <section class="sect calculator">
+    <div class="container"></div>
+  </section>
+  <section class="sect timeCalculator">
+    <div class="container"></div>
+  </section>
+  <section class="sect googleDino">
+    <div class="container"></div>
+  </section>
+  <section class="sect football">
+    <div class="container"></div>
+  </section>
+  <section class="sect biggestNum">
+    <div class="container"></div>
+  </section>
+  <section id="9" class="sect ourTeam">
+    <div class="container"></div>
+  </section>
+  <section class="sect scientists">
+    <div class="container"></div>
+  </section>
+</main>
+<footer id="footer" class="footer">
+  <div class="container"></div>
+</footer>
+
+<div class="welcome-modal modal" data-welcome-modal>
+  <button type="button" class="close-btn" data-welcome-close>
+    <svg width="17" height="17">
+      <use href="./images/icons.svg#icon-closebtn"></use>
+    </svg>
+  </button>
+  <h3 class="modal-title">
+    Привіт! <br />
+    Ви потрапили на сайт інтерактивних ігор та завдань <br />
+    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+    Бажаємо Вам гарно провести час!
+  </h3>
+  <form method="post" class="modal-form">
+    <div class="first-images-container">
+      <images src="./images/sword.png" alt="sword png" />
+      <images src="./images/puzzle.png" alt="puzzle png" />
+    </div>
+    <div class="form-content">
+      <label for="name" class="modal-label">
+        Введіть своє ім’я:
+        <input
+          class="modal-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ваше ім’я..."
+        />
+      </label>
+      <button type="submit" class="modal-submit-btn">Зберегти</button>
+    </div>
+    <div class="second-images-container">
+      <images src="./images/game-development.png" alt="game development png" />
+      <images src="./images/tic-tac-toe.png" alt="tic tac toe png" />
+    </div>
+  </form>
+</div>
