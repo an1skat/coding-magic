@@ -1,0 +1,48 @@
+body {
+    font-family: "Montserrat Alternates";
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
