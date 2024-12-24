@@ -1,4 +1,4 @@
-import { initModals } from "./modules/modals";
+import { initModals, initDropdown } from "./modules/modals";
 import { initGamesFilter } from "./modules/filter";
 import { renderGames } from "./modules/renderGames";
 import { games } from "./data/games";
@@ -26,5 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const ourTeamPrototype = new ourTeam();
   const scientistsPrototype = new scientists();
 
-  initModals()
+  initModals();
+  initDropdown();
 });
