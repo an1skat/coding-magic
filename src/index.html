@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Magic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +24,7 @@
     />
     <link rel="stylesheet" href="./sass/main.scss" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/index.js" defer></script>
+
     <style>
       .hidden {
         display: none;
@@ -39,7 +46,8 @@
       <include src="./partials/ourTeam.html"></include>
       <include src="./partials/scientists.html"></include>
     </main>
-    <div class="overlay is-hidden" data-modal-overlay></div>
+    <div class="overlay" data-modal-overlay></div>
     <include src="./partials/footer.html"></include>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

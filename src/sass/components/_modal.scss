@@ -70,6 +70,7 @@
   display: flex;
   flex-direction: column;
   gap: 46px;
+
   img {
     width: 30px;
     height: 30px;
@@ -107,6 +108,7 @@
   background-color: $accent-color;
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
+    // width: 151px;
 }
 .modal-submit-btn {
   border: 1px solid transparent;
@@ -116,6 +118,7 @@
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   color: $white;
   transition: color 250ms, border-color 250ms, background-color 250ms;
+//   font-family: "Montserrat Alternates";
 
   &:hover {
     cursor: pointer;

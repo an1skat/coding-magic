@@ -15,14 +15,16 @@ import ourTeam from "./games/ourTeam";
 import scientists from "./games/scientists";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const leapYear = new leapYear();
-  const guessNumber = new guessNumber();
-  const rockPaperScissors = new rockPaperScissors();
-  const calculator = new calculator();
-  const timeCalculator = new timeCalculator();
-  const googleDino = new googleDino();
-  const football = new football();
-  const biggestNum = new biggestNum();
-  const ourTeam = new ourTeam();
-  const scientists = new scientists();
+  const leapYearPrototype = new leapYear();
+  const guessNumberPrototype = new guessNumber();
+  const rockPaperScissorsPrototype = new rockPaperScissors();
+  const calculatorPrototype = new calculator();
+  const timeCalculatorPrototype = new timeCalculator();
+  const googleDinoPrototype = new googleDino();
+  const footballPrototype = new football();
+  const biggestNumPrototype = new biggestNum();
+  const ourTeamPrototype = new ourTeam();
+  const scientistsPrototype = new scientists();
+
+  initModals()
 });
