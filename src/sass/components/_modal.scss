@@ -3,6 +3,26 @@
   width: 576px;
   height: 316px;
   padding: 46px 41px;
+  border-radius: 20px;
+}
+.thanks-modal {
+  @extend %modal;
+  width: 463px;
+  height: 245px;
+  border-radius: 20px;
+  padding: 69px 43px;
+  display: flex;
+  justify-content: space-between;
+
+  .thanks-modal-title {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    top: 20px;
+  }
 }
 .overlay {
   height: 100vh;
@@ -108,7 +128,7 @@
   background-color: $accent-color;
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
-    // width: 151px;
+  // width: 151px;
 }
 .modal-submit-btn {
   border: 1px solid transparent;
@@ -118,7 +138,7 @@
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   color: $white;
   transition: color 250ms, border-color 250ms, background-color 250ms;
-//   font-family: "Montserrat Alternates";
+  //   font-family: "Montserrat Alternates";
 
   &:hover {
     cursor: pointer;
