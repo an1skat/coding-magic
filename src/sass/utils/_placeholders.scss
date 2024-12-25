@@ -1,10 +1,16 @@
 %modal {
-    position: fixed;
-    background-color: $white;
-    border-radius: 20px;
-    z-index: 9999;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    @include transition(transform)
+  position: fixed;
+  background-color: $white;
+  border-radius: 20px;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  @include transition(transform);
+}
+%text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
