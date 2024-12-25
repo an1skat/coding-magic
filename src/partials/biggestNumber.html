@@ -1,19 +1,44 @@
 <section class="sect biggestNumber">
   <div class="container">
     <h2 class="title">Введіть 3 числа</h2>
-    <form action="" class="biggestNumber-form">
-      <label class="biggestNumber-label">
-        <input type="text" name="firstNum" id="firstNum" class="input" placeholder="Введіть число" />
-      </label>
-      <label class="biggestNumber-label">
-        <input type="text" name="secondNum" id="secondNum" class="input" placeholder="Введіть число" />
-      </label>
-      <label class="biggestNumber-label">
-        <input type="text" name="thirdNum" id="thirdNum" class="input" placeholder="Введіть число" />
-      </label>
+    <form class="biggestNumber-form" method="post" data-biggNum-form>
+      <div class="biggestNumber-container">
+        <label class="biggestNumber-label">
+          <input
+            type="text"
+            name="firstNum"
+            id="firstNum"
+            class="input"
+            placeholder="Введіть число"
+            data-biggNum-input
+          />
+        </label>
+        <label class="biggestNumber-label">
+          <input
+            type="text"
+            name="secondNum"
+            id="secondNum"
+            class="input"
+            placeholder="Введіть число"
+            data-biggNum-input
+          />
+        </label>
+        <label class="biggestNumber-label">
+          <input
+            type="text"
+            name="thirdNum"
+            id="thirdNum"
+            class="input"
+            placeholder="Введіть число"
+            data-biggNum-input
+          />
+        </label>
+      </div>
+      <button type="submit" class="biggestNumber-btn" data-biggNum-btn>
+        Перевірити
+      </button>
     </form>
-    <button type="submit" class="biggestNumber-btn">Перевірити</button>
-    <p class="biggestNumber-result">
+    <p class="biggestNumber-result" data-biggNum-result>
       Будь ласка, введіть три числа та натисніть кнопку.
     </p>
   </div>

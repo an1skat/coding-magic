@@ -1,17 +1,25 @@
-.biggestNumber {
-  .container {
+// .biggestNumber {
+//   .container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 36px;
+//   }
+// }
+.biggestNumber-form {
+    margin-top: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 36px;
-  }
 }
-.biggestNumber-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 38px;
+.biggestNumber-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
 }
 .biggestNumber-btn {
   border: 1px solid transparent;
@@ -31,4 +39,6 @@
 }
 .biggestNumber-result {
     @extend %text;
+    margin-top: 36px;
+    text-align: center;
 }

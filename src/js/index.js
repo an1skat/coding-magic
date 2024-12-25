@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const googleDinoPrototype = new googleDino();
   const footballPrototype = new football();
   const biggestNumPrototype = new biggestNum();
+  biggestNumPrototype.init();
   const ourTeamPrototype = new ourTeam();
   const scientistsPrototype = new scientists();
 
