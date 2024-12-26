@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   biggestNumPrototype.init();
   const ourTeamPrototype = new ourTeam();
   const scientistsPrototype = new scientists();
+  scientistsPrototype.init();
 
   initModals();
   initDropdown();

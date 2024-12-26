@@ -22,20 +22,7 @@
     gap: 38px;
 }
 .biggestNumber-btn {
-  border: 1px solid transparent;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: black;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-  color: $white;
-  transition: color 250ms, border-color 250ms, background-color 250ms;
-
-  &:hover {
-    cursor: pointer;
-    color: black;
-    border-color: black;
-    background-color: transparent;
-  }
+  @extend %btn;
 }
 .biggestNumber-result {
     @extend %text;

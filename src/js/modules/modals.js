@@ -8,6 +8,11 @@ export const initModals = () => {
 
   const savedName = localStorage.getItem("userName");
 
+  if (!savedName) {
+    welcomeModal.classList.remove("is-hidden");
+    overlay.classList.remove("is-hidden");
+  }
+
   document.querySelectorAll("[data-modal-close]").forEach(btn => {
     btn.addEventListener("click", () => {
       const  modal = btn.closest(".modal");
