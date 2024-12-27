@@ -1,5 +1,5 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<defs> 
+<svg aria-hidden="true" style="width: 0; height: 0; position: absolute; overflow: hidden" xmlns="http://www.w3.org/2000/svg">
+	<defs>
 		<symbol id="icon-logo" viewBox="0 0 95 40" fill="none">
 			<path d="M11 12.4286L1 22.4286L11 32.4286" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 			<path d="M31 12.4286L41 22.4286L31 32.4286" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
