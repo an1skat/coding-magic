@@ -65,7 +65,7 @@
   }
 
   &:hover {
-    cursor: pointer;
+    cursor: $cursor;
     svg {
       stroke: $accent-color;
     }

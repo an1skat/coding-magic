@@ -1,121 +1,122 @@
 .header {
-    padding: 20px 0;
-  
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-  .header-container {
+  padding: 20px 0;
+
+  .container {
     display: flex;
     align-items: center;
-    gap: 81px;
+    justify-content: space-between;
   }
-  .nav-list {
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 81px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.nav-item {
+  position: relative;
+}
+.nav-link,
+.welcome-text {
+  color: $black;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  @include transition(color);
+
+  &:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-  }
-  .nav-item {
-    position: relative;
-  }
-  .nav-link,
-  .welcome-text {
-    color: $black;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
-    @include transition(color);
-  
-    &:first-child {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-  
-      &:hover {
-        .arrow {
-          border-color: $accent-color;
-        }
+    gap: 8px;
+
+    &:hover {
+      .arrow {
+        border-color: $accent-color;
       }
     }
-  
-    &:hover {
-      color: $accent-color;
-      cursor: pointer;
-    }
   }
-  .arrow {
-    border: solid black;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 2.8px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    @include transition(border-color);
+
+  &:hover {
+    cursor: $cursor;
+    color: $accent-color;
   }
-  
-  .dropdown {
-    position: absolute;
-    left: -30%;
-    border-radius: 0px 0px 20px 20px;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    width: 160px;
-    overflow: hidden;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-  
-    &.active {
-      height: 105px;
-      opacity: 1;
-      visibility: visible;
-    }
+}
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 2.8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  @include transition(border-color);
+}
+
+.dropdown {
+  position: absolute;
+  left: -30%;
+  border-radius: 0px 0px 20px 20px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  width: 160px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+  &.active {
+    height: 105px;
+    opacity: 1;
+    visibility: visible;
   }
-  .dropdown-item {
-    flex-grow: 1;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.dropdown-item {
+  flex-grow: 1;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-choice {
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  @include transition(color);
+
+  &:last-child {
+    border-radius: 0 0 20px 20px;
   }
-  .dropdown-choice {
-    padding: 0;
-    border: none;
-    width: 100%;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
-    font-style: normal;
-    @include transition(color);
-  
-    &:last-child {
-      border-radius: 0 0 20px 20px;
-    }
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      cursor: pointer;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: url(https://cdn.custom-cursor.com/db/21236/32/christmas-tree-snowball-cursor.png),
+      default !important;
   }
-  
-  .theme-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 51px;
-  }
-  .theme-btn {
-    padding: 0;
-    border: none;
-    width: 40px;
-    height: 20px;
-    cursor: pointer;
-  }
-  
+}
+
+.theme-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+}
+.theme-btn {
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 20px;
+  cursor: url(https://cdn.custom-cursor.com/db/21236/32/christmas-tree-snowball-cursor.png),
+    default !important;
+}

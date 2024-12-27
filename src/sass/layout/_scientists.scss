@@ -27,7 +27,7 @@
   }
 
   &:hover {
-    cursor: default;
+    cursor: $cursor;
     background-color: #cacaca;
   }
 }

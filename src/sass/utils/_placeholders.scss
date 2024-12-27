@@ -24,7 +24,7 @@
   transition: color 250ms, border-color 250ms, background-color 250ms;
 
   &:hover {
-    cursor: pointer;
+    cursor: $cursor;
     color: black;
     border-color: black;
     background-color: transparent;
