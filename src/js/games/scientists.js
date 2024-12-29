@@ -115,7 +115,7 @@ export default class Scientists {
     this.list.innerHTML = "";
     arr.forEach(el => {
       const renderEl = document.createElement("li");
-      renderEl.classList.add("scientists-item");
+      renderEl.classList.add("scientists__item");
       renderEl.innerHTML = `<p>${el.name} ${el.surname} <br /> ${el.born}-${el.dead}</p>`;
       this.list.appendChild(renderEl);
     });

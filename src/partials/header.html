@@ -1,101 +1,97 @@
 <header class="header">
   <div class="container">
-    <div class="header-container">
-      <svg class="logo-svg" width="95" height="40">
+    <div class="header__container">
+      <svg class="header__logo" width="95" height="40">
         <use href="./images/icons.svg#icon-logo"></use>
       </svg>
-      <nav class="nav">
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="" class="nav-link link">
+      <nav class="header__nav">
+        <ul class="header__nav-list list">
+          <li class="header__nav-item">
+            <a href="" class="header__nav-link link">
               Інтерактив
-              <div class="arrow"></div>
+              <div class="header__nav-arrow"></div>
             </a>
-            <ul class="dropdown list">
-              <li class="dropdown-item">
-                <button type="button" class="dropdown-choice">Числовий</button>
+            <ul class="header__dropdown">
+              <li class="header__dropdown-item">
+                <button type="button" class="header__dropdown-btn">Числовий</button>
               </li>
-              <li class="dropdown-item">
-                <button type="button" class="dropdown-choice">Ігровий</button>
+              <li class="header__dropdown-item">
+                <button type="button" class="header__dropdown-btn">Ігровий</button>
               </li>
-              <li class="dropdown-item">
-                <button type="button" class="dropdown-choice">
+              <li class="header__dropdown-item">
+                <button type="button" class="header__dropdown-btn">
                   Ознайомчий
                 </button>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="#ourTeam" class="nav-link link">Наша команда</a>
+          <li class="header__nav-item">
+            <a href="#ourTeam" class="header__nav-link link">Наша команда</a>
           </li>
-          <li class="nav-item">
-            <a href="#footer" class="nav-link link">Контакти</a>
+          <li class="header__nav-item">
+            <a href="#footer" class="header__nav-link link">Контакти</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="theme-container">
-      <button type="button" class="theme-btn">
-        <img
-          class="theme-images light"
-          src="./images/themeLight.png"
-          alt="theme image"
-        />
+    <div class="header__theme">
+      <button type="button" class="header__theme-btn">
+        <img class="header__theme-img header__theme-img--light" src="./images/themeLight.png" alt="theme image"/>
       </button>
-      <p class="welcome-text" data-welcome-open>Вітаємо, User!</p>
+      <p class="header__welcome-text" data-welcome-open>Вітаємо, User!</p>
     </div>
   </div>
 </header>
 
-<div class="welcome-modal modal is-hidden" data-modal>
-  <button type="button" class="close-btn" data-modal-close>
+<div class="modal modal--welcome is-hidden" data-modal>
+  <button type="button" class="modal__close-btn" data-modal-close>
     <svg width="17" height="17">
       <use href="./images/icons.svg#icon-closebtn"></use>
     </svg>
   </button>
-  <h3 class="modal-title">
+  <h3 class="modal__title">
     Привіт! <br />
     Ви потрапили на сайт інтерактивних ігор та завдань <br />
     Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
     Бажаємо Вам гарно провести час!
   </h3>
-  <form method="post" class="modal-form">
-    <div class="first-img-container">
+  <form method="post" class="modal__form">
+    <div class="modal__images modal__images--first">
       <img src="./images/sword.png" alt="sword png" />
       <img src="./images/puzzle.png" alt="puzzle png" />
     </div>
-    <div class="form-content">
-      <label for="name" class="modal-label">
-        Введіть своє ім’я:
+    <div class="modal__content">
+      <label for="name" class="modal__label">
+        Введіть своє ім'я:
         <input
           class="input"
           type="text"
           name="name"
           id="name"
-          placeholder="Ваше ім’я..."
+          placeholder="Ваше ім'я..."
         />
       </label>
-      <button type="submit" class="modal-submit-btn">Зберегти</button>
+      <button type="submit" class="modal__button">Зберегти</button>
     </div>
-    <div class="second-img-container">
+    <div class="modal__images modal__images--second">
       <img src="./images/game-development.png" alt="game development png" />
       <img src="./images/tic-tac-toe.png" alt="tic tac toe png" />
     </div>
   </form>
 </div>
 
-<div class="thanks-modal modal is-hidden" data-modal>
-  <button type="button" class="close-btn" data-modal-close>
+<div class="modal modal--thanks is-hidden" data-modal>
+  <button type="button" class="modal__close-btn" data-modal-close>
     <svg width="17" height="17">
       <use href="./images/icons.svg#icon-closebtn"></use>
     </svg>
   </button>
-  <div class="first-img-container">
+  <div class="modal__images modal__images--first">
     <img src="./images/sword.png" alt="sword png" />
     <img src="./images/puzzle.png" alt="puzzle png" />
   </div>
-  <h2 class="thanks-modal-title">Дякую за підписку!</h2>
-  <div class="second-img-container">
+  <h2 class="modal__title">Дякую за підписку!</h2>
+  <div class="modal__images modal__images--second">
     <img src="./images/game-development.png" alt="game development png" />
     <img src="./images/tic-tac-toe.png" alt="tic tac toe png" />
   </div>

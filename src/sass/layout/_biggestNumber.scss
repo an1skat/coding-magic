@@ -1,31 +1,25 @@
-// .biggestNumber {
-//   .container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 36px;
-//   }
-// }
-.biggestNumber-form {
+.biggest-number {
+  &__form {
     margin-top: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 36px;
-}
-.biggestNumber-container {
+  }
+
+  &__inputs {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 38px;
-}
-.biggestNumber-btn {
-  @extend %btn;
-}
-.biggestNumber-result {
+  }
+
+  &__btn {
+    @extend %btn;
+  }
+
+  &__result {
     @extend %text;
     margin-top: 36px;
     text-align: center;
+  }
 }

@@ -1,8 +1,8 @@
 export const initModals = () => {
-  const welcomeModal = document.querySelector(".welcome-modal");
-  const thanksModal = document.querySelector(".thanks-modal");
-  const welcomeText = document.querySelector(".welcome-text");
-  const modalForm = document.querySelector(".modal-form");
+  const welcomeModal = document.querySelector(".modal--welcome");
+  const thanksModal = document.querySelector(".modal-thanks");
+  const welcomeText = document.querySelector(".header__welcome-text");
+  const modalForm = document.querySelector(".modal__form");
 
   const overlay = document.querySelector("[data-modal-overlay]");
 
@@ -69,9 +69,9 @@ const closeModal = (modal, overlay) => {
 };
 
 export const initDropdown = () => {
-  document.querySelectorAll(".nav-item").forEach(item => {
-    const link = item.querySelector(".nav-link");
-    const dropdown = item.querySelector(".dropdown");
+  document.querySelectorAll(".header__nav-item").forEach(item => {
+    const link = item.querySelector(".header__nav-link");
+    const dropdown = item.querySelector(".header__dropdown");
 
     link.addEventListener("click", e => {
       e.preventDefault();
