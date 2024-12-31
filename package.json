@@ -1,40 +1,38 @@
 {
   "name": "coding-magic",
-  "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "version": "0.0.1",
   "type": "module",
-  "homepage": "https://an1skat.github.io/coding-magic/",
   "scripts": {
-    "start": "parcel src/index.html",
-    "prebuild-dev": "shx rm -rf dist/*",
-    "build-dev": "parcel build src/index.html --no-optimize --public-url /coding-magic/",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build src/index.html --public-url /coding-magic/",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
-  "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
-  "dependencies": {
-    "@parcel/watcher": "^2.5.0",
-    "gh-pages": "^6.2.0",
-    "modern-normalize": "^3.0.1"
+    "dev": "vite",
+    "build": "vite build --base=/coding-magic/",
+    "preview": "vite preview",
+    "watch": "npx vite build --watch"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3",
-    "parcel-reporter-clean-dist": "^1.0.4",
+    "@vituum/vite-plugin-posthtml": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "fast-glob": "^3.3.2",
+    "imagemin": "^9.0.0",
+    "imagemin-webp": "^8.0.0",
+    "postcss-sort-media-queries": "^5.2.0",
+    "posthtml": "^0.16.6",
+    "posthtml-extend": "^0.6.5",
     "posthtml-include": "^2.0.1",
     "sass": "^1.83.0",
-    "shx": "^0.3.4",
-    "svgo": "^3.3.2"
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.0.5",
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-posthtml": "^0.0.3",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vite-svg-sprite-wrapper": "^1.4.1",
+    "vituum": "^1.1.1"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
 }
