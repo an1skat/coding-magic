@@ -17,5 +17,8 @@
 		<symbol id="icon-closebtn" viewBox="0 0 17 17" fill="none">
 			<path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" />
 		</symbol>
+		<symbol id="icon-dropdown-arrow" viewBox="0 0 24 24" fill="none">
+			<path d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
 	</defs>
 </svg>
