@@ -3,6 +3,8 @@ export default class biggestNum {
     this.form = document.querySelector("[data-biggNum-form]");
     this.result = document.querySelector("[data-biggNum-result]");
     this.inputs = document.querySelectorAll("[data-biggNum-input]");
+
+    this.init();
   }
 
   init() {

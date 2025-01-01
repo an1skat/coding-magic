@@ -39,7 +39,7 @@ export const initModals = () => {
 
     modalForm.addEventListener("submit", e => {
       e.preventDefault();
-      const name = modalForm.querySelector(".modal-input").value.trim();
+      const name = modalForm.querySelector("[data-modal-input]").value.trim();
       const nameRegex = /^[a-zA-Zа-яА-ЯёЁ]{4,20}$/;
 
       if (!nameRegex.test(name)) {
