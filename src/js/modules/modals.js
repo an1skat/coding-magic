@@ -69,19 +69,13 @@ const closeModal = (modal, overlay) => {
 };
 
 export const initDropdown = () => {
-  document.querySelectorAll(".header__nav-item").forEach(item => {
-    const link = item.querySelector(".header__nav-link");
-    const dropdown = item.querySelector(".header__dropdown");
+    const link = document.querySelector("[data-dropdown-open]");
+    const dropdown = document.querySelector("[data-dropdown]");
+    const arrow = link.querySelector("[data-dropdown-arrow]")
 
     link.addEventListener("click", e => {
-      e.preventDefault();
-
-      const isActive = dropdown.classList.contains("active");
-      document
-        .querySelectorAll(".dropdown")
-        .forEach(dd => dd.classList.remove("active"));
-
-      if (!isActive) dropdown.classList.add("active");
-    });
-  });
+        e.preventDefault();
+        dropdown.classList.toggle("active")
+        arrow.classList.toggle('rotate')
+    })
 };

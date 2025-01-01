@@ -7,11 +7,13 @@
       <nav class="header__nav">
         <ul class="header__nav-list list">
           <li class="header__nav-item">
-            <a href="" class="header__nav-link link">
+            <a class="header__nav-link link" data-dropdown-open>
               Інтерактив
-              <div class="header__nav-arrow"></div>
+              <svg class="header__nav-arrow" width="15" height="15" data-dropdown-arrow>
+                <use href="./src/img/icons.svg#icon-dropdown-arrow"></use>
+              </svg>
             </a>
-            <ul class="header__dropdown">
+            <ul class="header__dropdown" data-dropdown>
               <li class="header__dropdown-item">
                 <button type="button" class="header__dropdown-btn">Числовий</button>
               </li>
