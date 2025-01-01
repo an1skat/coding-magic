@@ -22,6 +22,8 @@ export default class Scientists {
     ];
     this.btns = document.querySelectorAll("[data-scientists-btn]");
     this.list = document.querySelector("[data-scientist-list]");
+
+    this.init()
   }
 
   init() {
