@@ -1,1 +1,1 @@
-export default class rockPaperScissors {}
+export default class RockPaperScissors {}

@@ -1,1 +1,1 @@
-export default class googleDino {}
+export default class GoogleDino {}

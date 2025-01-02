@@ -7,12 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // &--flex {
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     gap: 24px;
-    // }
   }
   &__slider-btn {
     position: absolute; 
@@ -60,11 +54,11 @@
       background-color: var(--accent-color);
     }
     &-name {
-        @extend %text;
-        font-size: 14px;
+      @extend %text;
+      font-size: 14px;
     }
     &-info {
-        @extend %text;
+      @extend %text;
     }
   }
 
@@ -86,8 +80,8 @@
     cursor: var(--cursor);
 
     &--active {
-        background-color: #797979;
-        width: 30px;
+      background-color: #797979;
+      width: 30px;
     }
   }
 }

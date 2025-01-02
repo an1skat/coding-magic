@@ -1,1 +1,1 @@
-export default class football {}
+export default class Football {}

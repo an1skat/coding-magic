@@ -1,1 +1,1 @@
-export default class timeCalculator {}
+export default class TimeCalculator {}

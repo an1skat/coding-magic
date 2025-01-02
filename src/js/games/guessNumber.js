@@ -1,1 +1,1 @@
-export default class guessNumber {}
+export default class GuessNumber {}

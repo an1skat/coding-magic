@@ -1,1 +1,1 @@
-export default class leapYear {}
+export default class LeapYear {}

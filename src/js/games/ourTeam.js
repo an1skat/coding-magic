@@ -1,4 +1,4 @@
-export default class ourTeam {
+export default class OurTeam {
   constructor(containerSelector) {
     this.container = document.querySelector(containerSelector);
     this.slider = this.container.querySelector("[data-slider]");

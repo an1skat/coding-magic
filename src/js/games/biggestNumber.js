@@ -1,4 +1,4 @@
-export default class biggestNum {
+export default class BiggestNum {
   constructor() {
     this.form = document.querySelector("[data-biggNum-form]");
     this.result = document.querySelector("[data-biggNum-result]");
