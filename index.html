@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/coding-magic/assets/index-DqwldpVi.js"></script>
+    <script type="module" crossorigin src="/coding-magic/assets/index-ByiC4bfJ.js"></script>
     <link rel="stylesheet" crossorigin href="/coding-magic/assets/index.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <div class="header__container">
-      <svg class="header__logo" width="95" height="40">
+      <svg class="header__logo svg svg--stroke" width="95" height="40">
         <use href="/coding-magic/assets/icons.svg#icon-logo"></use>
       </svg>
       <nav class="header__nav">
@@ -30,10 +30,14 @@
             </a>
             <ul class="header__dropdown" data-dropdown="">
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">Числовий</button>
+                <button type="button" class="header__dropdown-btn">
+                  Числовий
+                </button>
               </li>
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">Ігровий</button>
+                <button type="button" class="header__dropdown-btn">
+                  Ігровий
+                </button>
               </li>
               <li class="header__dropdown-item">
                 <button type="button" class="header__dropdown-btn">
@@ -52,7 +56,7 @@
       </nav>
     </div>
     <div class="header__theme">
-      <button type="button" class="header__theme-btn">
+      <button type="button" class="header__theme-btn" data-theme-switcher="">
         <img class="header__theme-img header__theme-img--light" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAf+SURBVHgB1VtpaBNbFD6tzwXXcVfcUnDFpSmoIFZNRP+IglXccGtFBXFpKkj1h6ZF3HBpFEX/aPsUURGpgogg2FT94d5WQUUFo7hvL7iLWN/5zusN6XQ6mUnlcf1gSGYyd+7MN2c/NymUJDIzM32XLl1Kb968ue/Xr1/e6upq4/v374b6vU2bNrGtV69e1LNnTzIMg3RASkpKlO85wl+xVfJ++YYNG8KUBFLIHYzWrVsHWrRokfv161dj8uTJlJ6eTj6fT8jxeDyxEyORiGyVlZWylZeXE4+hYcOGUd++falZs2akGSK8hX/+/Fm4ZcuWiNNBTgkEcQUsYbkjRoygYDAopLlFOBymkpISOnnyJA0ePJhGjx5NmqLEKZEJCRw6dGjg9u3bQSbOKC4uriVlyQKSWVBQIETOnj1bG9U2IcKqXcCq/bfdSbYEduvWLfT58+fc0tLSpCQuESCNhYWF1L17d22lkW1laNOmTXn1/W5JYCAQME6cOFHavn17H8hzKnWQKGyLFi2ikSNHOhoDafT7/bqTWMn22x8KhaLm3ywJ7NOnTwU7Cm9ZWZkr9QIBFy9eFGnFWKeIRqNCYuPGjWn8+PGkI5jEMEui33w81XygZcuWoWTIA3HYADgLbE6BeTDfjx8/6MKFC6Qj2B761qxZU2Q+XovAjh07Znfo0EFsnlvDvn///lr727ZtIzfAfJj36dOn9PjxY9IRTGKASQzEH4sn0PPmzZuglaeFnYJaLl68mG7dulXnwlDBjx8/0qpVqyTEWb16NSajV69e1TkXkrly5UrKyMiQ68YD82L+06dPE4dMpCP4uYLwEbF99YXVtnjatGnZeAAz8NCwUQpDhgyhJUuW0MyZMx1J6ocPH6ioqIjOnDlDV69ejR2H2lp597y8PLpx4waNGjWKdES8Z1YEenh7xLD0uDwA6k3v3r2TfQ6qaf369bRixQrZB8Eg5/79+yKNjRo1Iq/XS7NmzUIcKefs3r2b8vPz6cuXL/9NyPNgPivgGv3796c5c+ZQ06ZNSUfwc7SFVxYV7tKlSzA7O7vecAXquGzZMvnOoQ2dPXtWyLt7965IEKRz69atdOrUKUnZzp8/Tzt27JC0DVIEojCec+eYxM6bN6/em8M5kO54adUNXAPIxacQ+PLlSx9slx1mzJghn4cPHyakcwcOHKDhw4cLYXYAaZAmSCDsHsYDc+fOtR2HPPvatWukMcSZQIV9rG5lFRUVCUccPHhQJOf48eM0ffp0cotz587RuHHjxNtmZWUlPB+EDxw4UKo5OoLzZX8q27MxDEcDQB48J7xtMoBNg31zQh6A+3r9+jXpCrb16ansIb1u8txjx44lHachrGHD6/h8OKInT56QrmDn6oMN9NjluojHuKxDN2/elP19+/ZRQ7B37175rKqqkmKCHfBi2T6TrmDn6q2XQKgaSk7soSUw7tq1K925c6dO8OsWUElcgzMeysnJEc+PeaykGt5Y14C6BgYINMzBMNS0R48eUmoCkQAI/F32CARyqUy+gzjMAyIxb6274/v69u0baQwjtb5fPn36RP8nOBOiPxEgMKqkTAExn5IMFUI8f/78t1Sjgc6dO9OzZ8/kO6QMKowigoo1FXBfGvZO4hG1JBBAF23dunWibsiP3759KwR26tSJGgJcY8CAAfTixQvauHGjfCKIt8qpMTe6eroCnT0QWJmodoc0DwUEAEWEhkCNR47MpSFbCQOBmvZLFITAMNqOTsGlnKSlEObATQaDFwtN0BUcxlSCwKpE+ayCKrSqfNYttm/fLiqMlNAJcF+wl7oCZX4lgdFEavzw4UOaMmWKlK2Qz6I40KRJE3ICbhNIxXrq1KlSyZk/fz7du3fPdgzUF1UcXSUQ9o9rguUqjAmhm2aHQ4cOySf6uMhKli5dKiQkKnoim7hy5QotWLCALl++LPkwcPToUdtx8MzK7uoIVt+wfNbsG5xx/IP6Xn1GOy0tLZaFcC2MNm/eTMuXL5f969ev05EjRyQ94wqFXIM7ezRhwoRYxXnXrl20du1aqU4D7dq1E8+OWqMZmAfz4SXp6oX5OdOwcuGvmv0oB84hjvsCKL2bAfWOT+EGDRpE79+/FzJQnYZHVZVnK6h4DvZP9VQwHjbOqpAB6UOtUeMQpkQt+4h//QaXzx+xjTLMDwXyUIIaO3YsTZo0qc5Do8qycOFCIRYleJTtYTNRdDVLNKR0z5499ODBA7JqYOFloZgKVdeRQNi+6upqvxWBsg6G1aoIzR63WQeIRTdNAbGjVYPKDmqVAqQZK7h0BBOYzc4jtl6mjgFij1nUu3fvgNvGurlzhyZ7Zmam4/FqdUKrVq3+iG6cguXSDg54y9q2betzSyIIAJEgwM0KA0UewiKESDoC62OYvAzzcctqDKtfFgZYNb/tgFYnVBeNc6dQaqs5eWEsLrL6zXZ5G9SZC58BJPsg5ncD0grnhPYnNh2RaHlbqt1gDm3yuC/BheOcCKrHDa1GK6ilIvC2EydO1JW8KMd6ATvyAFsCAc5QSvLz8/0c3pSgyQMi3ay8igfGgTj0iTkUkNBHx1QNUsehGALlnYnOdbXInB/ewwY/yCmcjzMXD8jAInMQi7DHvMgczgGkodqDVQuI65ChYIyGSzai/FJD3ELYabWQsj64XaUfA3vaMVy19nHc6OU35uHJPfF/c4D3BkmopqD81a9fP50CY/zNIYpyFH8P13hYZyUpE/4FRcjfZUL50D4AAAAASUVORK5CYII=" alt="theme image">
       </button>
       <p class="header__welcome-text" data-welcome-open="">Вітаємо, User!</p>
@@ -74,8 +78,12 @@
   </h3>
   <form method="post" class="modal__form">
     <div class="modal__images modal__images--first">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM5SURBVHgB7Zq/axRBFMe/iiAGNUFFLae2E2sVtVE0NkHxB2jhn6B9prS10tLaHyiiGDSNUczZWtpoqYKgKKIiSebL7bJvXnb3dveS7MzdfuGRY3d2br/5zLzZN7dAp06dYtYmxKNtqHe/vxGxZl38d7FcIx4jUlnUMypjQne2BWHLok+X+uTibknb4y6OIGJZZKQ+ujAlbU+7+IMKhEOVRTOz/LuAyAxbNDd7Hv0pEI1hi+Zmp5Pj0Ri28M0eKGmrzc6Ic1EYtmieoKbV+eANWzQfxjM5bYI2bLF2ZFMFa9hi+ASVpyANWzQ3e66krUn6S/veigBksT5kDXyzswhAFtkNfcHwCSqVgW/2JgKQxZiSrWv2YklbgxEzO1Zk68zZjux6aNLFMxcfXFxW5yw2Zp3dMLPcPXwrvvgXsu0VixEk+xKrt1N+uniKtSnxtAxaWmdJ9oX44vcurmD1FmodsowzJW0NWkxQt8QXP3QxlRzncJamr5f0EVU2vgPfsNzmvYTMNIf34Zzrq5Z4lEEASw+HtJy/HNLS9FFkppfgPyVF+1CxE36GJmlZd5L0X2SkTyB/d7FIBgE+VJD0PLKb6sEnfQw+6agfF1ORtBzeJL1HnCfpb+L8P0RY4knx50u9Hr+GT5rLjSR9qqAvg4DJUtrsZ/F5Dj7ps8hIc05fUH0ZRGaWc3mfi3coJk2TkvTJ5LhBZGZpLM3QnNOPUEyaw/sHMtI3ECFZvQ26Az5pmi4iLSN4s/y8u6AtST+A/4+RpJm4vovzTxCYqpDVomlJuuwxVJaWrSuP7FTFa/ejvxUrH07ktbLg4Jy+hpalzS4kx6poAvk1M4e6JH0V/tLWmoYhq82yfp6DX3CwLxpfFMfvoSWVLT2DpM2+SvrjnO7Bn9MysS0mbVqRJtvULMnKKaBLyzTeoMU3Ag+KG2HC2V7xOm2WoyJvvuvSch4tkqU2u7iP7Ia4tEwOuGYQWS3S5FbRbQTyricTii7wi0wXzdnoxAwqk0oe6bpkgxcfHXWBn5rWmbyHyM2mIunn8EnvxYiR1SJpaforRmDODhJJy5c2R5KsFknz18K0zt2FMdEhhP9ieadO46IVimYprbIHWMcAAAAASUVORK5CYII=" alt="sword png">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARKSURBVHgB7ZpbSBRhFMf/djG620MPlhkVEWGpBRVF0YWgoAd7sYvQBeolwzJ6CSoSIkG699JTGkUEgRAUVBZl6UM3ItHsITTpImVRaGaaqZ3jd8b9LN35Rndmx3V/8Gd093xn9sx8833nnN0Y+JthpHTSelIyqZn0lnSddAkRxlLSZ1JHL+LAVyBCSCE1QAX2jLSHlERaQNpOKpf36klzMMBJJL2DCiiPFNOL3QmxqSNNwABmF1Qg92zs+EI8FNsjGMA8gApig4HtcrF9igHMV6ggEgxsE8S2FoYMgf8YKsdGA9smOY6AIX4MuFqOqQa2iXJ8A0OGwVsuklbb2IyTYxqp2MY2U46LSB9gzw14jLW3mqjAwF++A3+dioG3cMBjSXOhkoZgfCK1wp4pBjb86NYgDFh3eDy8ZYict8OPi5arRAOOdKIBRzp9CZi3Fa5obkMt9VWku6RtpFGIMLgLwalfsC5EcpDx1rbELZpXpBekm6TNpEkIDXGkraSr2jkKtc9oDKeEbTLoJSmDNIM0m7QR6k53iM26XnwEy7S46F+I/rEYKmEJlm0ZMRHq7vGA4whUNDqctZ0RGw4+rgebK1D17m6oNs4S0g5SmYxrIW1C3+CLVS9+Skj7SPOg8mw+BzcUikydZYqjSvTecoG8VyK2h+CM0wjUtnEOx06FKh6sG9LvlPm5OEszsF0ltk/gjFjSY/StZbNTxj1CiGgRh6MNbMeILfeQnV7pNTK23NkwlMq4dIQA3rq4auHFaLihfZvIacC85fEH/w1ntbq1GE62MzTZh9uhng+2NelCpIqttWo74aeM4Qvr5GJZi2iTnSFfxcsIvncy1iKSBbXHBSNLjlynlsEe3isz5O/5UIHyxTKphS04N+CGPK/8xXbGTjoG92FPkUOfDdrYAnktH844BsMuSQwC046TiDYb+2+kHzY2PGtsnyWhRvxxH4u/TjkLNS2T4KxDMRNqy+Rz7yWdC2ZsXWkvCols0lEE2jJ8Xm7HntI+Rw76xgHNRy66X/QJ4jcb8DZgPbVsRvepzc/sfvSPw//45NW+Ufu/cwaHI+A67byc+94iLUNomEW6RvqinaNW+zssAXMTbyTMEpn+wOUq7+1dTTyvG/E6v+A+1r7cdTOjHY9Ix6spzQUFNwli4QPcXrRW4v+2UNi+eQDcDXgtVPHB/jlntvbesAXs5pSOJ52HSl9Pkg5C7Y385XUpwohbdzhb/FYgUOpVwFlhEWpV6cUD15TtCB3cHuUmGk/rO/IaNwPjET64M+raHW4Vv8a/v/ACt1ZmXht4xnTAZ7gV8B/SR6hnNwU+w60pnSd+C+Ez3Ap4GgL77hb4CDcTjyzN/wXSdO09XrFzRZ7idmqZg0D71Sr432v/f4fHuB0www1C/gW73m5p0I6e4kXAFrxdJYpiMQgC7uncngYc7XhEOtGAI51B3cSrxiDhNcLbhaiEh/wFJf6uRm4V4U0AAAAASUVORK5CYII=" alt="puzzle png">
+      <svg class="svg" width="30" height="30">
+        <use href="/coding-magic/assets/icons.svg#icon-sword"></use>
+      </svg>
+      <svg class="svg" width="30" height="30">
+        <use href="/coding-magic/assets/icons.svg#icon-puzzle"></use>
+      </svg>
     </div>
     <div class="modal__content">
       <label for="name" class="modal__label">
@@ -85,58 +93,46 @@
       <button type="submit" class="modal__button">Зберегти</button>
     </div>
     <div class="modal__images modal__images--second">
-      <img src="data:image/png;base64,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" alt="game development png">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAODSURBVHgB7VtJaxRBFP6SqIcEjAsKikoMiqIxHg1GjSj6BwRB9ODyA0QRPQURL3qJEVFET3rzEBAPHhQFcQHFi7hCDpEoI3GJC0QEk0nem+7OVL+uXiYzPVM1Mx98Yaq7uqq+rlevXqqqAT+2EG8QvxAniJOWMkv8TLxJ3AANGoh9hjW6lOx3NU7jvOENLgUvwFXdQXyNIEbdjKXGQpH+gdKjiThPc72H/7Cdq2/iPbET6WFMqWsM6WE1HC2qNvZPucGtXlyFdFEuwYxO+LWxM855NO/CT6SPcgpmjCr1jTfC773GUX3IKr+bZsF8cIdwfLCJ2OJe+0C8hxlapGrj35A+CjHpHcR30E8zf+BMpw0xZXwXzxkr+DSSza+DxLaIcqwQ3IvCgooXxLDhabzgNfDPHMzfcMz3APEY9GbeG1Kf8YKviDYNEds1+a4i+FJ00ZXxggdFm3ZGlPVU5N2vyeMT3AizMBf+SG+E+CAi/4BIdyAGJgpWETfPjoh0c0x+4wSz+anR3nIEX4KKbSL9FQlg2hh+JNp0NqScNjjBh5p3qyaf8U7ruGgTT1GniIuUPNvheG/pzXUwXjCb8EcE59l/xFdwxq0u+NgdUp8VkRYvvA0jeaR1BuGwJpZei6DZSrK5n0A0rBHMYPM+QnwCf7jJKxe8KLcZ8bBKsIrZxKXE+SgMPsE2LAB4+E/MoEiYFnikjpoTzMsjk+LaX6SL5krWpxNc1ag5k9Z56bQXx1sqXJ818/BMYfSKR+qoC6521AXHYA5xRcT9VuISGI6kXnol8v+fviQuFvf3IO8RL0WUU1EvDSQXfFHkfYO86G4Et0eWhZRjzbQ0LNLric+JR4l34d+2/ET8BUORtIdZ0HXEry9xT++NKMcak2aw6GsIF8sbWrtiyrBKMINF34Ze8MkEz1sn+BCCK/4e3yLovSWsEtwFx2yjxnCcaGsE88aVnHo4PYCg6GcR5VgjWO7Ms1kfhjOm+xEU3R5SjjWC98Hfs93KPTllDSH8OJFVY/ggnJ7u0dxjgbxLcJm4LqIM67x0saiveJQTNSk4K9LVBnVlNssC1YMgC5Duafhyg0/FtyrpDAu+LzLdcjPajo3EO+LaQ+8s8mPNAxxCpnFgvBwfeXBH6vaRu7wf1fzNksfcZzweuKfPGd7gYtiHkMiPj9nzZz28RGPzp3jc9oyrxXdYbQoQcY/bQMYYVwAAAABJRU5ErkJggg==" alt="tic tac toe png">
+      <svg class="svg" width="30" height="30">
+        <use href="/coding-magic/assets/icons.svg#icon-game-development"></use>
+      </svg>
+      <svg class="svg" width="30" height="30">
+        <use href="/coding-magic/assets/icons.svg#icon-tic-tac-toe"></use>
+      </svg>
     </div>
   </form>
 </div>
 
-<div class="modal modal--thanks is-hidden" data-modal="">
-  <button type="button" class="modal__close-btn" data-modal-close="">
-    <svg width="17" height="17">
-      <use href="/coding-magic/assets/icons.svg#icon-closebtn"></use>
-    </svg>
-  </button>
-  <div class="modal__images modal__images--first">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM5SURBVHgB7Zq/axRBFMe/iiAGNUFFLae2E2sVtVE0NkHxB2jhn6B9prS10tLaHyiiGDSNUczZWtpoqYKgKKIiSebL7bJvXnb3dveS7MzdfuGRY3d2br/5zLzZN7dAp06dYtYmxKNtqHe/vxGxZl38d7FcIx4jUlnUMypjQne2BWHLok+X+uTibknb4y6OIGJZZKQ+ujAlbU+7+IMKhEOVRTOz/LuAyAxbNDd7Hv0pEI1hi+Zmp5Pj0Ri28M0eKGmrzc6Ic1EYtmieoKbV+eANWzQfxjM5bYI2bLF2ZFMFa9hi+ASVpyANWzQ3e66krUn6S/veigBksT5kDXyzswhAFtkNfcHwCSqVgW/2JgKQxZiSrWv2YklbgxEzO1Zk68zZjux6aNLFMxcfXFxW5yw2Zp3dMLPcPXwrvvgXsu0VixEk+xKrt1N+uniKtSnxtAxaWmdJ9oX44vcurmD1FmodsowzJW0NWkxQt8QXP3QxlRzncJamr5f0EVU2vgPfsNzmvYTMNIf34Zzrq5Z4lEEASw+HtJy/HNLS9FFkppfgPyVF+1CxE36GJmlZd5L0X2SkTyB/d7FIBgE+VJD0PLKb6sEnfQw+6agfF1ORtBzeJL1HnCfpb+L8P0RY4knx50u9Hr+GT5rLjSR9qqAvg4DJUtrsZ/F5Dj7ps8hIc05fUH0ZRGaWc3mfi3coJk2TkvTJ5LhBZGZpLM3QnNOPUEyaw/sHMtI3ECFZvQ26Az5pmi4iLSN4s/y8u6AtST+A/4+RpJm4vovzTxCYqpDVomlJuuwxVJaWrSuP7FTFa/ejvxUrH07ktbLg4Jy+hpalzS4kx6poAvk1M4e6JH0V/tLWmoYhq82yfp6DX3CwLxpfFMfvoSWVLT2DpM2+SvrjnO7Bn9MysS0mbVqRJtvULMnKKaBLyzTeoMU3Ag+KG2HC2V7xOm2WoyJvvuvSch4tkqU2u7iP7Ia4tEwOuGYQWS3S5FbRbQTyricTii7wi0wXzdnoxAwqk0oe6bpkgxcfHXWBn5rWmbyHyM2mIunn8EnvxYiR1SJpaforRmDODhJJy5c2R5KsFknz18K0zt2FMdEhhP9ieadO46IVimYprbIHWMcAAAAASUVORK5CYII=" alt="sword png">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARKSURBVHgB7ZpbSBRhFMf/djG620MPlhkVEWGpBRVF0YWgoAd7sYvQBeolwzJ6CSoSIkG699JTGkUEgRAUVBZl6UM3ItHsITTpImVRaGaaqZ3jd8b9LN35Rndmx3V/8Gd093xn9sx8833nnN0Y+JthpHTSelIyqZn0lnSddAkRxlLSZ1JHL+LAVyBCSCE1QAX2jLSHlERaQNpOKpf36klzMMBJJL2DCiiPFNOL3QmxqSNNwABmF1Qg92zs+EI8FNsjGMA8gApig4HtcrF9igHMV6ggEgxsE8S2FoYMgf8YKsdGA9smOY6AIX4MuFqOqQa2iXJ8A0OGwVsuklbb2IyTYxqp2MY2U46LSB9gzw14jLW3mqjAwF++A3+dioG3cMBjSXOhkoZgfCK1wp4pBjb86NYgDFh3eDy8ZYict8OPi5arRAOOdKIBRzp9CZi3Fa5obkMt9VWku6RtpFGIMLgLwalfsC5EcpDx1rbELZpXpBekm6TNpEkIDXGkraSr2jkKtc9oDKeEbTLoJSmDNIM0m7QR6k53iM26XnwEy7S46F+I/rEYKmEJlm0ZMRHq7vGA4whUNDqctZ0RGw4+rgebK1D17m6oNs4S0g5SmYxrIW1C3+CLVS9+Skj7SPOg8mw+BzcUikydZYqjSvTecoG8VyK2h+CM0wjUtnEOx06FKh6sG9LvlPm5OEszsF0ltk/gjFjSY/StZbNTxj1CiGgRh6MNbMeILfeQnV7pNTK23NkwlMq4dIQA3rq4auHFaLihfZvIacC85fEH/w1ntbq1GE62MzTZh9uhng+2NelCpIqttWo74aeM4Qvr5GJZi2iTnSFfxcsIvncy1iKSBbXHBSNLjlynlsEe3isz5O/5UIHyxTKphS04N+CGPK/8xXbGTjoG92FPkUOfDdrYAnktH844BsMuSQwC046TiDYb+2+kHzY2PGtsnyWhRvxxH4u/TjkLNS2T4KxDMRNqy+Rz7yWdC2ZsXWkvCols0lEE2jJ8Xm7HntI+Rw76xgHNRy66X/QJ4jcb8DZgPbVsRvepzc/sfvSPw//45NW+Ufu/cwaHI+A67byc+94iLUNomEW6RvqinaNW+zssAXMTbyTMEpn+wOUq7+1dTTyvG/E6v+A+1r7cdTOjHY9Ix6spzQUFNwli4QPcXrRW4v+2UNi+eQDcDXgtVPHB/jlntvbesAXs5pSOJ52HSl9Pkg5C7Y385XUpwohbdzhb/FYgUOpVwFlhEWpV6cUD15TtCB3cHuUmGk/rO/IaNwPjET64M+raHW4Vv8a/v/ACt1ZmXht4xnTAZ7gV8B/SR6hnNwU+w60pnSd+C+Ez3Ap4GgL77hb4CDcTjyzN/wXSdO09XrFzRZ7idmqZg0D71Sr432v/f4fHuB0www1C/gW73m5p0I6e4kXAFrxdJYpiMQgC7uncngYc7XhEOtGAI51B3cSrxiDhNcLbhaiEh/wFJf6uRm4V4U0AAAAASUVORK5CYII=" alt="puzzle png">
-  </div>
-  <h2 class="modal__title">Дякую за підписку!</h2>
-  <div class="modal__images modal__images--second">
-    <img src="data:image/png;base64,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" alt="game development png">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAODSURBVHgB7VtJaxRBFP6SqIcEjAsKikoMiqIxHg1GjSj6BwRB9ODyA0QRPQURL3qJEVFET3rzEBAPHhQFcQHFi7hCDpEoI3GJC0QEk0nem+7OVL+uXiYzPVM1Mx98Yaq7uqq+rlevXqqqAT+2EG8QvxAniJOWMkv8TLxJ3AANGoh9hjW6lOx3NU7jvOENLgUvwFXdQXyNIEbdjKXGQpH+gdKjiThPc72H/7Cdq2/iPbET6WFMqWsM6WE1HC2qNvZPucGtXlyFdFEuwYxO+LWxM855NO/CT6SPcgpmjCr1jTfC773GUX3IKr+bZsF8cIdwfLCJ2OJe+0C8hxlapGrj35A+CjHpHcR30E8zf+BMpw0xZXwXzxkr+DSSza+DxLaIcqwQ3IvCgooXxLDhabzgNfDPHMzfcMz3APEY9GbeG1Kf8YKviDYNEds1+a4i+FJ00ZXxggdFm3ZGlPVU5N2vyeMT3AizMBf+SG+E+CAi/4BIdyAGJgpWETfPjoh0c0x+4wSz+anR3nIEX4KKbSL9FQlg2hh+JNp0NqScNjjBh5p3qyaf8U7ruGgTT1GniIuUPNvheG/pzXUwXjCb8EcE59l/xFdwxq0u+NgdUp8VkRYvvA0jeaR1BuGwJpZei6DZSrK5n0A0rBHMYPM+QnwCf7jJKxe8KLcZ8bBKsIrZxKXE+SgMPsE2LAB4+E/MoEiYFnikjpoTzMsjk+LaX6SL5krWpxNc1ag5k9Z56bQXx1sqXJ818/BMYfSKR+qoC6521AXHYA5xRcT9VuISGI6kXnol8v+fviQuFvf3IO8RL0WUU1EvDSQXfFHkfYO86G4Et0eWhZRjzbQ0LNLric+JR4l34d+2/ET8BUORtIdZ0HXEry9xT++NKMcak2aw6GsIF8sbWrtiyrBKMINF34Ze8MkEz1sn+BCCK/4e3yLovSWsEtwFx2yjxnCcaGsE88aVnHo4PYCg6GcR5VgjWO7Ms1kfhjOm+xEU3R5SjjWC98Hfs93KPTllDSH8OJFVY/ggnJ7u0dxjgbxLcJm4LqIM67x0saiveJQTNSk4K9LVBnVlNssC1YMgC5Duafhyg0/FtyrpDAu+LzLdcjPajo3EO+LaQ+8s8mPNAxxCpnFgvBwfeXBH6vaRu7wf1fzNksfcZzweuKfPGd7gYtiHkMiPj9nzZz28RGPzp3jc9oyrxXdYbQoQcY/bQMYYVwAAAABJRU5ErkJggg==" alt="tic tac toe png">
-  </div>
-</div>
 
     <main>
       <section class="sect leap-year">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect guess-number">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect rock-paper-scissors">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect calculator">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect time-calculator">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect dino-game">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect football">
     <div class="container"></div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none;">
+<hr style="width: 536px; height: 1px; border: none">
       <section class="sect biggest-number">
   <div class="container">
     <h2 class="title">Введіть 3 числа</h2>
@@ -161,7 +157,7 @@
     </p>
   </div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none">
+<hr style="width: 536px; height: 1px; border: none">
 
       <section class="sect our-team">
   <div class="container">
@@ -227,7 +223,7 @@
     </div>
   </div>
 </section>
-<hr style="width: 536px; height: 1px; background-color: black; border: none">
+<hr style="width: 536px; height: 1px; border: none">
 
       <section class="sect scientists">
   <div class="container">
@@ -298,7 +294,33 @@
     </main>
     <div class="overlay is-hidden" data-modal-overlay=""></div>
     <footer id="footer" class="footer">
-    <div class="container"></div>
-  </footer>
+  <div class="container"></div>
+</footer>
+
+<div class="modal modal--thanks is-hidden" data-modal="">
+  <button type="button" class="modal__close-btn" data-modal-close="">
+    <svg width="17" height="17">
+      <use href="/coding-magic/assets/icons.svg#icon-closebtn"></use>
+    </svg>
+  </button>
+  <div class="modal__images modal__images--first">
+    <svg class="svg" width="30" height="30">
+      <use href="/coding-magic/assets/icons.svg#icon-sword"></use>
+    </svg>
+    <svg class="svg" width="30" height="30">
+      <use href="/coding-magic/assets/icons.svg#icon-puzzle"></use>
+    </svg>
+  </div>
+  <h2 class="modal__title modal__title--thanks">Дякую за підписку!</h2>
+  <div class="modal__images modal__images--second">
+    <svg class="svg" width="30" height="30">
+      <use href="/coding-magic/assets/icons.svg#icon-game-development"></use>
+    </svg>
+    <svg class="svg" width="30" height="30">
+      <use href="/coding-magic/assets/icons.svg#icon-tic-tac-toe"></use>
+    </svg>
+  </div>
+</div>
+
   </body>
 </html>
