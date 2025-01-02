@@ -1,0 +1,7 @@
+.svg {
+    fill: var(--text-color);
+
+    &--stroke {
+        stroke: var(--text-color)
+    }
+}

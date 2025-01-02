@@ -1,5 +1,24 @@
-$accent-color: #d7d7d7;
-$black: #131212;
-$white: #fff;
-$cursor: url(https://cdn.custom-cursor.com/db/21236/32/christmas-tree-snowball-cursor.png),
-  default !important;
+:root {
+  --accent-color: #d7d7d7;
+  --text-color: #000;
+  --alt-text-color: var(--background-color);
+  --background-color: #fff;
+  --modal-background-color: var(--background-color);
+  --alt-background-color: var(--text-color);
+  --border-color: transparent;
+  --box-shadow-color: rgba(0, 0, 0, 0.25);
+  --cursor: url(https://cdn.custom-cursor.com/db/21236/32/christmas-tree-snowball-cursor.png),
+    default !important;
+  --bg-img: url("../img/backgroundLight.jpg");
+}
+
+html.is-dark-theme {
+  --text-color: #fff;
+  --alt-text-color: #000;
+  --background-color: #000;
+  --alt-background-color: #fff;
+  --border-color: #fff;
+  --modal-background-color: #131213;
+  --box-shadow-color: rgba(255, 255, 255, 0.65);
+  --bg-img: url("../img/backgroundDark.jpg");
+}

@@ -26,7 +26,7 @@
     }
 
     &-link {
-      color: $black;
+      color: var(--text-color);
       font-size: 12px;
       font-weight: 400;
       line-height: normal;
@@ -34,11 +34,11 @@
       @include transition(color);
 
       &:hover {
-        cursor: $cursor;
-        color: $accent-color;
+        cursor: var(--cursor);
+        color: var(--accent-color);
 
         .header__nav-arrow {
-          stroke: $accent-color;
+          stroke: var(--accent-color);
         }
       }
       &:first-child {
@@ -63,9 +63,9 @@
     position: absolute;
     left: -30%;
     border-radius: 0px 0px 20px 20px;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
     width: 160px;
     overflow: hidden;
     height: 0;
@@ -95,6 +95,8 @@
       font-weight: 400;
       line-height: normal;
       font-style: normal;
+      color: var(--text-color);
+      background-color: var(--background-color);
       @include transition(color);
 
       &:last-child {
@@ -103,8 +105,8 @@
 
       &:hover,
       &:focus {
-        color: $accent-color;
-        cursor: $cursor;
+        color: var(--accent-color);
+        cursor: var(--cursor);
       }
     }
   }
@@ -120,7 +122,8 @@
       border: none;
       width: 40px;
       height: 20px;
-      cursor: $cursor;
+      cursor: var(--cursor);
+      background-color: transparent;
     }
 
     &-img {
@@ -131,7 +134,7 @@
   }
 
   &__welcome-text {
-    color: $black;
+    color: var(--text-color);
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -139,8 +142,8 @@
     @include transition(color);
 
     &:hover {
-      cursor: $cursor;
-      color: $accent-color;
+      cursor: var(--cursor);
+      color: var(--accent-color);
     }
   }
 }

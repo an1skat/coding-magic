@@ -29,14 +29,14 @@
     }
 
     &:hover {
-      cursor: $cursor;
+      cursor: var(--cursor);
       .our-team__slider-arrow {
-        stroke: $accent-color;
+        stroke: var(--accent-color);
       }
     }
   }
   &__slider-arrow {
-    stroke: #000;
+    stroke: var(--text-color);
     @include transition(stroke);
   }
   &__slider {
@@ -57,7 +57,7 @@
       height: 150px;
       flex-shrink: 0;
       border-radius: 20px;
-      background-color: $accent-color;
+      background-color: var(--accent-color);
     }
     &-name {
         @extend %text;
@@ -79,11 +79,11 @@
   }
   &__dot {
     border: none;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     width: 18px;
     height: 3px;
     border-radius: 20px;
-    cursor: $cursor;
+    cursor: var(--cursor);
 
     &--active {
         background-color: #797979;

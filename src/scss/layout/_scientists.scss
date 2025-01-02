@@ -28,7 +28,7 @@
     }
 
     &:hover {
-      cursor: $cursor;
+      cursor: var(--cursor);
       background-color: #cacaca;
     }
   }

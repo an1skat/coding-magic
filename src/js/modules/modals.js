@@ -1,6 +1,6 @@
 export const initModals = () => {
   const welcomeModal = document.querySelector(".modal--welcome");
-  const thanksModal = document.querySelector(".modal-thanks");
+  const thanksModal = document.querySelector(".modal--thanks");
   const welcomeText = document.querySelector(".header__welcome-text");
   const modalForm = document.querySelector(".modal__form");
 
@@ -15,7 +15,7 @@ export const initModals = () => {
 
   document.querySelectorAll("[data-modal-close]").forEach(btn => {
     btn.addEventListener("click", () => {
-      const  modal = btn.closest(".modal");
+      const modal = btn.closest(".modal");
       closeModal(modal, overlay);
     });
   });
@@ -52,7 +52,6 @@ export const initModals = () => {
       localStorage.setItem("userName", name);
       welcomeText.textContent = `Вітаємо, ${name}!`;
       closeModal(welcomeModal, overlay);
-      showModal(thanksModal, overlay);
     });
 
 

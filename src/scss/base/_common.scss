@@ -1,11 +1,12 @@
 html {
-  cursor: $cursor;
+  cursor: var(--cursor);
 }
 body {
   font-family: "Montserrat Alternates";
+  background-color: var(--background-color);
 }
 main {
-    background-image: url('../img/background.jpg');
+    background-image: var(--bg-img);
     background-size: cover;
 }
 h1,
@@ -33,6 +34,7 @@ hr {
     position: absolute;
     margin: 0 auto;
     left: 36%;
+    background-color: var(--alt-background-color);
 }
 
 .list {
@@ -42,7 +44,7 @@ hr {
 
 .link {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 .visually-hidden {

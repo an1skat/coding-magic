@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="header__container">
-      <svg class="header__logo" width="95" height="40">
+      <svg class="header__logo svg svg--stroke" width="95" height="40">
         <use href="./src/img/icons.svg#icon-logo"></use>
       </svg>
       <nav class="header__nav">
@@ -9,16 +9,25 @@
           <li class="header__nav-item">
             <a class="header__nav-link link" data-dropdown-open>
               Інтерактив
-              <svg class="header__nav-arrow" width="15" height="15" data-dropdown-arrow>
+              <svg
+                class="header__nav-arrow"
+                width="15"
+                height="15"
+                data-dropdown-arrow
+              >
                 <use href="./src/img/icons.svg#icon-dropdown-arrow"></use>
               </svg>
             </a>
             <ul class="header__dropdown" data-dropdown>
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">Числовий</button>
+                <button type="button" class="header__dropdown-btn">
+                  Числовий
+                </button>
               </li>
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">Ігровий</button>
+                <button type="button" class="header__dropdown-btn">
+                  Ігровий
+                </button>
               </li>
               <li class="header__dropdown-item">
                 <button type="button" class="header__dropdown-btn">
@@ -37,8 +46,12 @@
       </nav>
     </div>
     <div class="header__theme">
-      <button type="button" class="header__theme-btn">
-        <img class="header__theme-img header__theme-img--light" src="./src/img/themeLight.png" alt="theme image"/>
+      <button type="button" class="header__theme-btn" data-theme-switcher>
+        <img
+          class="header__theme-img header__theme-img--light"
+          src="./src/img/themeLight.png"
+          alt="theme image"
+        />
       </button>
       <p class="header__welcome-text" data-welcome-open>Вітаємо, User!</p>
     </div>
@@ -59,8 +72,12 @@
   </h3>
   <form method="post" class="modal__form">
     <div class="modal__images modal__images--first">
-      <img src="./src/img/sword.png" alt="sword png" />
-      <img src="./src/img/puzzle.png" alt="puzzle png" />
+      <svg class="svg" width="30" height="30">
+        <use href="./src/img/icons.svg#icon-sword"></use>
+      </svg>
+      <svg class="svg" width="30" height="30">
+        <use href="./src/img/icons.svg#icon-puzzle"></use>
+      </svg>
     </div>
     <div class="modal__content">
       <label for="name" class="modal__label">
@@ -77,25 +94,13 @@
       <button type="submit" class="modal__button">Зберегти</button>
     </div>
     <div class="modal__images modal__images--second">
-      <img src="./src/img/game-development.png" alt="game development png" />
-      <img src="./src/img/tic-tac-toe.png" alt="tic tac toe png" />
+      <svg class="svg" width="30" height="30">
+        <use href="./src/img/icons.svg#icon-game-development"></use>
+      </svg>
+      <svg class="svg" width="30" height="30">
+        <use href="./src/img/icons.svg#icon-tic-tac-toe"></use>
+      </svg>
     </div>
   </form>
 </div>
 
-<div class="modal modal--thanks is-hidden" data-modal>
-  <button type="button" class="modal__close-btn" data-modal-close>
-    <svg width="17" height="17">
-      <use href="./src/img/icons.svg#icon-closebtn"></use>
-    </svg>
-  </button>
-  <div class="modal__images modal__images--first">
-    <img src="./src/img/sword.png" alt="sword png" />
-    <img src="./src/img/puzzle.png" alt="puzzle png" />
-  </div>
-  <h2 class="modal__title">Дякую за підписку!</h2>
-  <div class="modal__images modal__images--second">
-    <img src="./src/img/game-development.png" alt="game development png" />
-    <img src="./src/img/tic-tac-toe.png" alt="tic tac toe png" />
-  </div>
-</div>

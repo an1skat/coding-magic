@@ -3,6 +3,7 @@ import "../scss/style.scss";
 import { initModals, initDropdown } from "./modules/modals";
 import { initGamesFilter } from "./modules/filter";
 import { renderGames } from "./modules/renderGames";
+import ThemeSwitcher from "./modules/theme";
 import { games } from "./data/games";
 
 import leapYear from "./games/leapYear";
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new biggestNum();
   new ourTeam(".our-team");
   new scientists();
+  new ThemeSwitcher();
 
   initModals();
   initDropdown();
