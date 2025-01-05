@@ -1,0 +1,42 @@
+.rock-paper-scissors {
+  &_box {
+    display: flex;
+    justify-content: center;
+  }
+  &_title {
+    margin-bottom: 36px;
+  }
+  &_game {
+    margin-left: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_list {
+    display: flex;
+    gap: 38px;
+    margin-bottom: 36px;
+  }
+  &_btn {
+    @extend %btn;
+    width: 60px;
+    height: 60px;
+  }
+  &_result-text {
+    @extend %text;
+    margin-bottom: 36px;
+  }
+  &_computer-version {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--alt-background-color);
+    color: var(--alt-text-color);
+    box-shadow: none;
+    font-size: 12px;
+  }
+  &_score-list {
+    margin-left: 104px;
+    line-height: 170%;
+  }
+}
