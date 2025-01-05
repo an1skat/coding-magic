@@ -1,0 +1,29 @@
+.footer-div {
+  display: flex;
+  justify-content: center;
+  gap: 185px;
+  align-items: center;
+  padding: 60px 0;
+}
+.contacts-list__item {
+  font-size: 12px;
+  line-height: 20.4px;
+}
+.subscription__input {
+  border-radius: 20px;
+  background: var(--accent-color);
+  border: none;
+  padding: 10px 80px 10px 10px;
+}
+.subscription__button {
+  padding: 10px;
+  border-radius: 20px;
+  background: var(--text-color);
+  color: var(--background-color);
+  font-size: 12px;
+}
+.subscription__text {
+  font-size: 6px;
+  line-height: normal;
+  margin-top: 18px;
+}
