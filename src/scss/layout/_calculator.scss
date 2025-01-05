@@ -1,0 +1,45 @@
+.calculator {
+  &_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_title {
+    margin-bottom: 36px;
+  }
+  &_input {
+    @extend %text;
+    width: 134px;
+    height: 35px;
+    margin-right: 38px;
+    margin-left: 10px;
+    transition: box-shadow 250ms;
+  }
+  &_input:hover,
+  &_input:focus {
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.495);
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_value-text {
+    @extend %text;
+    box-shadow: none;
+    width: 118px;
+    margin-left: 38px;
+  }
+  &_list-item {
+    flex-basis: calc((100% - 10px) / 2);
+    margin: 5px 0;
+    width: 25px;
+  }
+  &_item-btn {
+    @extend %btn;
+    padding: 5px 12px;
+  }
+  &_btn {
+    @extend %btn;
+    padding: 5px 12px;
+  }
+}
