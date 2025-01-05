@@ -1,5 +1,30 @@
 <footer id="footer" class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <svg class="footer__logo svg svg--stroke" width="165" height="70">
+      <use href="./src/img/icons.svg#icon-logo"></use>
+    </svg>
+    <ul class="contacts-list">
+      <li class="contacts-list__item">Тел: +38 (123) 456 78 90</li>
+      <li class="contacts-list__item">E-Mail: codingmagic@gmail.com</li>
+      <li class="contacts-list__item">Facebook: CodingMagic</li>
+      <li class="contacts-list__item">Twitter: CodingMagic</li>
+      <li class="contacts-list__item">Instagram: CodingMagic</li>
+    </ul>
+    <div class="subscription">
+      <form class="subscription__form">
+        <input
+          type="email"
+          name="email"
+          placeholder="Ваша ел. адреса..."
+          class="subscription__input"
+        />
+        <button type="submit" class="subscription__button">Підписатись</button>
+        <p class="subscription__text">
+          *Підписавшись, Ви зможете отримати інформацію про новинки на сайті
+        </p>
+      </form>
+    </div>
+  </div>
 </footer>
 
 <div class="modal modal--thanks is-hidden" data-modal>
