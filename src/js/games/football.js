@@ -13,11 +13,9 @@ export default class Football {
     followMouse() {
         if (!this.container || !this.football) return;
         this.container.addEventListener('mousemove', (event) => {
-            const rect = this.container.getBoundingClientRect(); // Розміри поля
-
+            const rect = this.container.getBoundingClientRect(); 
             const mouseX = event.clientX - rect.left;
             const mouseY = event.clientY - rect.top;
-
             const ballX = Math.min(
                 Math.max(mouseX - this.football.offsetWidth / 2, 0),
                 rect.width - this.football.offsetWidth
