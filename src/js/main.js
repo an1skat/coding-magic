@@ -4,6 +4,7 @@ import { initModals, initDropdown } from "./modules/modals";
 import { initGamesFilter } from "./modules/filter";
 import { renderGames } from "./modules/renderGames";
 import ThemeSwitcher from "./modules/theme";
+import EmailSender from "./modules/mailer";
 import { games } from "./data/games";
 
 import LeapYear from "./games/leapYear";
@@ -17,6 +18,8 @@ import biggestNum from "./games/biggestNumber";
 import OurTeam from "./games/ourTeam";
 import Scientists from "./games/scientists";
 
+import emailjs from "emailjs-com";
+
 document.addEventListener("DOMContentLoaded", () => {
   new LeapYear();
   new GuessNumber();
@@ -29,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new OurTeam(".our-team");
   new Scientists();
   new ThemeSwitcher();
+  new EmailSender("service_8xruord", "template_dfiasow", "-FeNQYbQrAIFUSs9W", "form[data-email-form]");
 
   initModals();
   initDropdown();

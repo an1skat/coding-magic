@@ -12,6 +12,7 @@
   "devDependencies": {
     "@vituum/vite-plugin-posthtml": "^1.1.0",
     "autoprefixer": "^10.4.20",
+    "emailjs-com": "^3.2.0",
     "fast-glob": "^3.3.2",
     "imagemin": "^9.0.0",
     "imagemin-webp": "^8.0.0",
@@ -33,6 +34,7 @@
     "cover 99.5%"
   ],
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "modern-normalize": "^3.0.1"
   }
 }
