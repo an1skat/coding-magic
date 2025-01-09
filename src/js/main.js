@@ -4,7 +4,7 @@ import { initModals, initDropdown } from "./modules/modals";
 import { initGamesFilter } from "./modules/filter";
 import { renderGames } from "./modules/renderGames";
 import ThemeSwitcher from "./modules/theme";
-import EmailSender from "./modules/mailer";
+// import EmailSender from "./modules/mailer";
 import { games } from "./data/games";
 
 import LeapYear from "./games/leapYear";
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new OurTeam(".our-team");
   new Scientists();
   new ThemeSwitcher();
-  new EmailSender("service_8xruord", "template_dfiasow", "-FeNQYbQrAIFUSs9W", "form[data-email-form]");
+//   new EmailSender("service_8xruord", "template_dfiasow", "-FeNQYbQrAIFUSs9W", "form[data-email-form]");
 
   initModals();
   initDropdown();
