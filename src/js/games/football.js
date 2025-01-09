@@ -16,7 +16,6 @@ export default class Football {
             const rect = this.container.getBoundingClientRect(); 
             const ballX = event.clientX - rect.left - this.football.offsetWidth / 2;
             const ballY = event.clientY - rect.top - this.football.offsetWidth / 2;
-            
             this.football.style.left = `${ballX}px`;
             this.football.style.top = `${ballY}px`;
         });
