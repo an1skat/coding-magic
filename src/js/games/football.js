@@ -20,7 +20,6 @@ export default class Football {
              y = Math.max(0, Math.min(y, rect.height - this.football.offsetHeight));
             this.football.style.left = `${x}px`;
             this.football.style.top = `${y}px`;
-        
         });
     }
 }
