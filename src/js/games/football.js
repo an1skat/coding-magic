@@ -14,10 +14,12 @@ export default class Football {
         if (!this.container || !this.football) return;
         this.container.addEventListener('click', (event) => {
             const rect = this.container.getBoundingClientRect(); 
-            const ballX = event.clientX - rect.left - this.football.offsetWidth / 2;
-            const ballY = event.clientY - rect.top - this.football.offsetWidth / 2;
-            this.football.style.left = `${ballX}px`;
-            this.football.style.top = `${ballY}px`;
+            let x = event.clientX - rect.left - this.football.offsetWidth / 2;
+            let y = event.clientY - rect.top - this.football.offsetHeight / 2;
+             x = Math.max(0, Math.min(x, rect.width - this.football.offsetWidth));
+             y = Math.max(0, Math.min(y, rect.height - this.football.offsetHeight));
+            this.football.style.left = `${x}px`;
+            this.football.style.top = `${y}px`;
         });
     }
 }
