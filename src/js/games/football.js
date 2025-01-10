@@ -10,24 +10,16 @@ export default class Football {
         this.football.style.top = '0px';
         this.football.style.left = '0px';
     }
-    followMouse() {
+    click() {
         if (!this.container || !this.football) return;
-        this.container.addEventListener('mousemove', (event) => {
+        this.container.addEventListener('click', (event) => {
             const rect = this.container.getBoundingClientRect(); 
-            const mouseX = event.clientX - rect.left;
-            const mouseY = event.clientY - rect.top;
-            const ballX = Math.min(
-                Math.max(mouseX - this.football.offsetWidth / 2, 0),
-                rect.width - this.football.offsetWidth
-            );
-            const ballY = Math.min(
-                Math.max(mouseY - this.football.offsetHeight / 2, 0),
-                rect.height - this.football.offsetHeight
-            );
+            const ballX = event.clientX - rect.left - this.football.offsetWidth / 2;
+            const ballY = event.clientY - rect.top - this.football.offsetWidth / 2;
             this.football.style.left = `${ballX}px`;
             this.football.style.top = `${ballY}px`;
         });
     }
 }
 const football = new Football();
-football.followMouse();
+football.click();
