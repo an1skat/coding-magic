@@ -1,5 +1,21 @@
-.googleDino__img {
-  width: 720px;
-  height: 241px;
-  margin: 0 auto;
+.googleDino__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.googleDino {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  margin-top: 150px;
+  margin-right: 200px;
+}
+.googleDino__scoreTxt {
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  right: 450px;
+  top: 25px;
 }
