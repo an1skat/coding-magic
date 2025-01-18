@@ -6,8 +6,8 @@ import glob from "fast-glob";
 import { fileURLToPath } from "url";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import posthtml from "@vituum/vite-plugin-posthtml";
-import ViteSvgSpriteWrapper from 'vite-svg-sprite-wrapper';
-import {viteStaticCopy} from 'vite-plugin-static-copy';
+import ViteSvgSpriteWrapper from "vite-svg-sprite-wrapper";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   plugins: [
@@ -17,8 +17,12 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "src/img/icons.svg",
+          src: "src/img/icons.svg", 
           dest: "assets",
+        },
+        {
+          src: "src/img/**/*.{png,jpg,jpeg}", 
+          dest: "assets", 
         },
       ],
     }),
@@ -64,5 +68,5 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
-  }
+  },
 });
