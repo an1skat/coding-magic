@@ -1,12 +1,12 @@
 export default class ThemeSwitcher {
   themes = {
     dark: {
-      src: "/themeDark.png",
+      src: "./src/img/themeDark.png",
       alt: "dark theme image",
       storageValue: "dark",
     },
     light: {
-      src: "/themeLight.png",
+      src: "./src/img/themeLight.png",
       alt: "light theme image",
       storageValue: "light",
     },
