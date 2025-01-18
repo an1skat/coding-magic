@@ -1,0 +1,38 @@
+.time {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    gap: 33px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__input {
+    padding: 10px;
+    width: 150px;
+    font-size: 12px;
+  }
+  &__btn {
+    @extend %btn;
+    position: absolute;
+    padding: 9px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+  }
+  &__hr {
+    border-top: 1px dashed white;
+    width: 100px;
+    position: static;
+    margin: 0;
+  }
+  &__text {
+  }
+}
