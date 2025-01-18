@@ -1,8 +1,7 @@
 export default class GoogleDino {
-  constructor(scoreElementId) {
+  constructor() {
     this.score = 0;
     this.scoreElement = document.getElementById("scoreElementId");
-
     setInterval(() => this.updateScore(), 100);
   }
   updateScore() {
