@@ -15,10 +15,10 @@
     margin-left: 10px;
     transition: box-shadow 250ms;
   }
-  &_input:hover,
-  &_input:focus {
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.495);
-  }
+//   &_input:hover,
+//   &_input:focus {
+//     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.495);
+//   }
   &_list {
     display: flex;
     flex-wrap: wrap;

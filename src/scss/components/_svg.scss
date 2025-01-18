@@ -2,6 +2,14 @@
     fill: var(--text-color);
 
     &--stroke {
-        stroke: var(--text-color)
+        stroke: var(--text-color);
+
+        &--alt {
+            stroke: var(--alt-text-color);
+        }
+    }
+
+    &--alt {
+        fill: var(--alt-text-color);
     }
 }

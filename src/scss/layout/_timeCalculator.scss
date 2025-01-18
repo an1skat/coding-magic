@@ -28,11 +28,12 @@
     right: 0;
   }
   &__hr {
-    border-top: 1px dashed white;
+    border-top: 1px dashed var(--alt-text-color);
     width: 100px;
     position: static;
     margin: 0;
   }
   &__text {
+    color: var(--text-color);
   }
 }

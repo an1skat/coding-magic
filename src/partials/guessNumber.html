@@ -1,15 +1,21 @@
-<section class="sect guess-number">
-    <div class="container">
-        <h3 class="title">
-            Вгадай число, яке загадав комп'ютер
-        </h3>
-        <div class="game">
-            <div class="input-button">
-                <input class="input" type="text" placeholder="Введіть число">
-                <button id="button"></button>
-            </div>
-            <p id="p">Вітаю, ви вгадали число! (number)</p>
-        </div>
+<section data-sect="numerical" class="sect guess-number">
+  <div class="container">
+    <h3 class="title">Вгадай число, яке загадав комп'ютер</h3>
+    <div class="guess-number__container">
+      <form class="guess-number__form">
+        <input
+          class="guess-number__input input"
+          type="text"
+          placeholder="Введіть число"
+        />
+        <button class="guess-number__btn" data-guess-btn>
+          <svg class="svg--alt svg--stroke--alt" width="15" height="15">
+            <use href="./src/img/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="guess-number__text">Вітаю, ви вгадали число! (number)</p>
     </div>
+  </div>
 </section>
-<hr style="width: 536px; height: 1px; border: none;" />
+<hr style="width: 536px; height: 1px; border: none" />

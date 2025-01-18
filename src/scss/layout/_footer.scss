@@ -8,12 +8,12 @@
 .contacts-list__item {
   font-size: 12px;
   line-height: 20.4px;
+  color: var(--text-color);
 }
 .subscription__button {
+    @extend %btn;
   padding: 10px;
   border-radius: 20px;
-  background: var(--text-color);
-  color: var(--background-color);
   font-size: 12px;
   margin-left: 36px;
 }
@@ -21,4 +21,5 @@
   font-size: 8px;
   line-height: normal;
   margin-top: 18px;
+  color: var(--text-color);
 }

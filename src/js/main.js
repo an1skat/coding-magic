@@ -1,11 +1,9 @@
 import "../scss/style.scss";
 
 import { initModals, initDropdown } from "./modules/modals";
-import { initGamesFilter } from "./modules/filter";
 import { renderGames } from "./modules/renderGames";
 import ThemeSwitcher from "./modules/theme";
 // import EmailSender from "./modules/mailer";
-import { games } from "./data/games";
 
 import LeapYear from "./games/leapYear";
 import GuessNumber from "./games/guessNumber";
@@ -36,4 +34,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initModals();
   initDropdown();
+  renderGames();
 });
