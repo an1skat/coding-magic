@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/coding-magic/assets/index-BfBN0P3K.js"></script>
+    <script type="module" crossorigin src="/coding-magic/assets/index-CmoivTgg.js"></script>
     <link rel="stylesheet" crossorigin href="/coding-magic/assets/index.css">
   </head>
   <body>
@@ -30,17 +30,22 @@
             </a>
             <ul class="header__dropdown" data-dropdown="">
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">
+                <button type="button" class="header__dropdown-btn" data-changeBtn="all">
+                  Всі
+                </button>
+              </li>
+              <li class="header__dropdown-item">
+                <button type="button" class="header__dropdown-btn" data-changeBtn="numerical">
                   Числовий
                 </button>
               </li>
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">
+                <button type="button" class="header__dropdown-btn" data-changeBtn="game">
                   Ігровий
                 </button>
               </li>
               <li class="header__dropdown-item">
-                <button type="button" class="header__dropdown-btn">
+                <button type="button" class="header__dropdown-btn" data-changeBtn="acquaintance">
                   Ознайомчий
                 </button>
               </li>
@@ -103,28 +108,32 @@
   </form>
 </div>
 
-
     <main>
-      <section class="sect leap-year">
+      <h1 class="title" style="font-size: 24px; margin-bottom: 36px;">Популярні інетрактивні ігри</h1>
+      <hr style="width: 536px; height: 1px; border: none;">
+      <section data-sect="numerical" class="sect leap-year">
     <div class="container"></div>
 </section>
 <hr style="width: 536px; height: 1px; border: none">
-      <section class="sect guess-number">
-    <div class="container">
-        <h3 class="title">
-            Вгадай число, яке загадав комп'ютер
-        </h3>
-        <div class="game">
-            <div class="input-button">
-                <input class="input" type="text" placeholder="Введіть число">
-                <button id="button"></button>
-            </div>
-            <p id="p">Вітаю, ви вгадали число! (number)</p>
-        </div>
+      <section data-sect="numerical" class="sect guess-number">
+  <div class="container">
+    <h3 class="title">Вгадай число, яке загадав комп'ютер</h3>
+    <div class="guess-number__container">
+      <form class="guess-number__form">
+        <input class="guess-number__input input" type="text" placeholder="Введіть число">
+        <button class="guess-number__btn" data-guess-btn="">
+          <svg class="svg--alt svg--stroke--alt" width="15" height="15">
+            <use href="/coding-magic/assets/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="guess-number__text">Вітаю, ви вгадали число! (number)</p>
     </div>
+  </div>
 </section>
-<hr style="width: 536px; height: 1px; border: none;">
-      <section class="sect rock-paper-scissors">
+<hr style="width: 536px; height: 1px; border: none">
+
+      <section data-sect="game" class="sect rock-paper-scissors">
   <div class="container">
     <h2 class="rock-paper-scissors_title title">Камінь - ножиці - папір</h2>
     <div class="rock-paper-scissors_box">
@@ -155,7 +164,7 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect calculator">
+      <section data-sect="numerical" class="sect calculator">
   <div class="container">
     <h2 class="calculator_title title">Калькулятор</h2>
     <div class="calculator_box">
@@ -182,14 +191,14 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect time-calculator">
+      <section data-sect="numerical" class="sect time-calculator">
   <div class="container">
     <h3 class="title">Калькулятор часу</h3>
     <div class="time__box">
       <form action="" class="time__form">
         <input class="time__input input" type="text" name="number" id="number" placeholder="Введіть число" data-time-input="">
         <button class="time__btn" data-time-btn="">
-          <svg class="svg" width="15" height="15">
+          <svg class="svg--alt svg--stroke--alt" width="15" height="15">
             <use href="/coding-magic/assets/icons.svg#icon-search"></use>
           </svg>
         </button>
@@ -201,7 +210,7 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect dino-game">
+      <section data-sect="game" class="sect dino-game">
   <div class="container">
     <h3 class="title googleDino__title">Google динозавр</h3>
     <div class="googleDino__box">
@@ -215,7 +224,7 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect football">
+      <section data-sect="game" class="sect football">
   <div class="container">
     <h2 class="title">Футбол</h2>
     <div class="football-field">
@@ -225,7 +234,7 @@
   <hr style="width: 536px; height: 1px; border: none">
 </section>
 
-      <section class="sect biggest-number">
+      <section data-sect="numerical" class="sect biggest-number">
   <div class="container">
     <h2 class="title">Введіть 3 числа</h2>
     <form class="biggest-number__form" method="post" data-biggNum-form="">
@@ -251,7 +260,7 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect our-team">
+      <section data-sect="acquaintance" class="sect our-team">
   <div class="container">
     <h2 class="title">Наша команда</h2>
     <div class="our-team__slider-container">
@@ -317,7 +326,7 @@
 </section>
 <hr style="width: 536px; height: 1px; border: none">
 
-      <section class="sect scientists">
+      <section data-sect="acquaintance" class="sect scientists">
   <div class="container">
     <h2 class="title">Обери вченого/их</h2>
     <ul class="scientists__list list" data-scientist-list=""></ul>
