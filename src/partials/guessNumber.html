@@ -7,14 +7,15 @@
           class="guess-number__input input"
           type="text"
           placeholder="Введіть число"
+          data-guess-input
         />
-        <button class="guess-number__btn" data-guess-btn>
+        <button class="guess-number__btn" data-guess-btn type="button">
           <svg class="svg--alt svg--stroke--alt" width="15" height="15">
             <use href="./src/img/icons.svg#icon-search"></use>
           </svg>
         </button>
       </form>
-      <p class="guess-number__text">Вітаю, ви вгадали число! (number)</p>
+      <p class="guess-number__text" data-guess-result>Вітаю, ви вгадали число! (number)</p>
     </div>
   </div>
 </section>
