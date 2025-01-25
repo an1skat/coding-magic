@@ -1,0 +1,32 @@
+.leap-year {  
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 36px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__input {
+    padding: 10px;
+    width: 150px;
+    font-size: 12px;
+  }
+  &__btn {
+    @extend %btn;
+    position: absolute;
+    padding: 9px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+  }
+
+  &__text {
+    color: #039900;
+  }
+}
