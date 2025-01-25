@@ -15,11 +15,11 @@ export default class guessNumber {
     const numberInput = document.querySelector('[data-guess-input]');
     if (numberInput.value == randomNumber) {
       paragraph.style.color = "green";
-      paragraph.textContent = "Ви вгадали число!";
+      paragraph.textContent = `Ви вгадали число! (${randomNumber})`;
       console.log("right");
     } else {
       paragraph.style.color = "red";
-      paragraph.textContent = "Ви не вгадали число!";
+      paragraph.textContent = `Ви не вгадали число! (${randomNumber})`;
       console.log("wrong");
     }
     console.log(randomNumber);
