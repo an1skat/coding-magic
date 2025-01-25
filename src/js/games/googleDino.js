@@ -5,9 +5,11 @@ export default class GoogleDino {
     setInterval(() => this.updateScore(), 100);
 
     this.object = document.getElementById("dino");
+    this.section = document.querySelector(".dino-game"); // Секция, в которой находится динозавр
     this.isJumping = false;
     this.jumpHeight = 100;
     this.gravity = 10;
+
     document.addEventListener("keydown", (event) => {
       if (event.code === "KeyW") {
         this.jump();
@@ -25,13 +27,19 @@ export default class GoogleDino {
       console.error("this.object is not defined or is null");
       return;
     }
-    if (this.isJumping) console.log("bob");
+    if (this.isJumping) return;
 
     this.isJumping = true;
     let startPos = parseInt(getComputedStyle(this.object).bottom);
+    let sectionHeight = this.section.offsetHeight;
+    let maxJumpPos = Math.min(
+      startPos + this.jumpHeight,
+      sectionHeight - this.object.offsetHeight
+    );
+
     let currentPos = startPos;
     let upInterval = setInterval(() => {
-      if (currentPos >= startPos + this.jumpHeight) {
+      if (currentPos >= maxJumpPos) {
         clearInterval(upInterval);
         let downInterval = setInterval(() => {
           if (currentPos <= startPos) {
