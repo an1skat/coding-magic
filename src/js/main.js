@@ -16,7 +16,7 @@ import biggestNum from "./games/biggestNumber";
 import OurTeam from "./games/ourTeam";
 import Scientists from "./games/scientists";
 
-import emailjs from "emailjs-com";
+//import emailjs from "emailjs-com";
 
 document.addEventListener("DOMContentLoaded", () => {
   new LeapYear();
