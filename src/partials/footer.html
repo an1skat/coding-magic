@@ -12,16 +12,20 @@
         <li class="contacts-list__item">Instagram: CodingMagic</li>
       </ul>
       <div class="subscription">
-        <label for="name" class="subscription__label">
-          <input
-            class="input"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ваша ел. адреса..."
-          />
-        </label>
-        <button type="submit" class="subscription__button">Підписатись</button>
+        <form method="post" data-modal-form>
+          <label for="name" class="subscription__label">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ваша ел. адреса..."
+            />
+          </label>
+          <button type="submit" class="subscription__button">
+            Підписатись
+          </button>
+        </form>
         <p class="subscription__text">
           *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
         </p>
