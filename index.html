@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/coding-magic/assets/index-BbIRcZHY.js"></script>
+    <script type="module" crossorigin src="/coding-magic/assets/index-akV1rA7J.js"></script>
     <link rel="stylesheet" crossorigin href="/coding-magic/assets/index.css">
   </head>
   <body>
@@ -228,9 +228,19 @@
     <h3 class="title googleDino__title">Google динозавр</h3>
     <div class="googleDino__box">
       <div class="game">
-        <img class="googleDino" id="dino" src="/coding-magic/assets/cooldinogoogleDino.png" alt="">
-        <img id="cactus-container" class="googleDino__cactuses" src="/coding-magic/assets/googleDino-cactus.png" alt="">
-        <p class="googleDino__scoreTxt" id="scoreElementId"></p>
+        <!-- <img
+          class="googleDino"
+          id="dino"
+          src="./src/img/cooldinogoogleDino.png"
+          alt=""
+        /> -->
+        <div id="cactus-container"></div>
+        <!-- <img
+          class="googleDino__cactus"
+          src="./src/img/googleDino-cactus.png"
+          alt=""
+        /> -->
+        <p class="googleDino__scoreTxt" id="score"></p>
       </div>
     </div>
   </div>
@@ -421,9 +431,9 @@
         <li class="contacts-list__item">Instagram: CodingMagic</li>
       </ul>
       <div class="subscription">
-        <form method="post" data-modal-form="">
-          <label for="name" class="subscription__label">
-            <input class="input" type="text" name="name" id="name" placeholder="Ваша ел. адреса...">
+        <form method="post" data-email-form="">
+          <label for="email" class="subscription__label">
+            <input class="input" type="email" name="email" id="email" placeholder="Ваша ел. адреса...">
           </label>
           <button type="submit" class="subscription__button">
             Підписатись
