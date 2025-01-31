@@ -4,7 +4,6 @@ export const initModals = () => {
   const welcomeText = document.querySelector(".header__welcome-text");
   const modalForm = document.querySelector(".modal__form");
   const overlay = document.querySelector("[data-modal-overlay]");
-  const thanksForm = document.querySelector("[data-modal-form]");
   const savedName = localStorage.getItem("userName");
 
   if (!savedName) {
@@ -15,11 +14,11 @@ export const initModals = () => {
 
   setupModalCloseButtons(overlay);
   setupEscapeKeyListener(welcomeModal, overlay);
-  setupEscapeKeyListener(thanksModal, overlay);
+//   setupEscapeKeyListener(thanksModal, overlay);
   setupOverlayClickListener(overlay, welcomeModal, thanksModal);
   setupWelcomeTextClickListener(welcomeModal, overlay);
   setupFormSubmission(modalForm, welcomeText, welcomeModal, overlay);
-  setupFormSubmission(thanksForm, welcomeText, thanksModal, overlay, 1);
+//   setupFormSubmission(thanksForm, welcomeText, thanksModal, overlay, 1);
 };
 
 const setupModalCloseButtons = (overlay) => {
